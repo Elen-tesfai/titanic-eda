@@ -11,10 +11,10 @@ from sklearn.impute import SimpleImputer
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 from sklearn.model_selection import GridSearchCV
 
-# Load Data
-train_data = pd.read_csv('train.csv')
-test_data = pd.read_csv('test.csv')
-gender_submission = pd.read_csv('gender_submission.csv')
+# Load Data (CSV files are now in 'data' folder)
+train_data = pd.read_csv('data/train.csv')
+test_data = pd.read_csv('data/test.csv')
+gender_submission = pd.read_csv('data/gender_submission.csv')
 
 # Print the first few rows of each dataset
 print("\nTraining Data:")
